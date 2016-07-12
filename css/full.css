@@ -425,6 +425,7 @@ h6 span {
 }
 
 
+
 @media (max-width: 853px) {
 .singled {
 	margin-top: 14px; 
@@ -535,6 +536,47 @@ color: #FEFEFE;
 .logo{
 	margin-left: 15px;
 }
+.menued{
+	padding-bottom:25px;
+}
+.navbar-collapse{
+	padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-nav{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+nav ul{
+	border-left: 1px ridge;
+	border-right: 1px ridge;
+	border-bottom: 1px ridge;
+	border-color: #FEFEFE;
+}
+nav li{
+	border-top: 1px ridge;
+	border-color: #FEFEFE;
+	padding-bottom: 16px;
+
+}
+.single {
+padding-top: 23px; 
+margin-top: 0px;
+}
+
+.singled {
+padding-top: 23px; 
+margin-top: 0px;
+}
+
+.double {
+padding-top: 14px; 
+margin-top: 0px;
+}
+.last{
+	padding-bottom: 18px;
+}
+
 }
 
 
