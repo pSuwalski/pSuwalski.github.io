@@ -585,4 +585,26 @@ margin-top: 0px;
 }
 
 
+@media (min-width: 1500px) {
+	.motto{
+		height: 900px;
+	}
+	.low{
+		height: 830px;
+	}
+	.how{
+		height: 900px;
+	}
+	.offer{
+		height: 900px;
+	}
+	.about{
+		height: 900px;
+	}
+	.bout{
+		margin-left: 7%;
+	}
+
+}
+
 
