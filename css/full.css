@@ -581,6 +581,23 @@ margin-top: 0px;
 	padding-bottom: 18px;
 	
 }
+	.motto{
+		height: 900px;
+	}
+	.low{
+		height: 830px;
+	}
+	.how{
+		height: 900px;
+	}
+	.offer{
+		height: 900px;
+	}
+	.about{
+		background: url('../img/about_small.png') no-repeat fixed center center;
+	}
+
+
 
 }
 
