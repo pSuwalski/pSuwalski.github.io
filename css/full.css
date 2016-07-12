@@ -242,7 +242,7 @@ p, h4 {
     display: block;
     position: relative;
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     background: url('../img/main_lo.jpg') no-repeat fixed center center;
     background-size: cover;
     }
@@ -371,6 +371,7 @@ h6 span {
 	-webkit-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.82);
 	-moz-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.82);
 	box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.82);
+	min-width: 262px;
 
 }
 .popup h2{
@@ -525,6 +526,9 @@ color: #FEFEFE;
 .nav-head{
 	position: absolute;
 	z-index:1;
+}
+.popup{
+	height: 450px;
 }
 
 }
