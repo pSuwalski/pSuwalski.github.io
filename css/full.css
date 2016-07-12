@@ -529,10 +529,12 @@ color: #FEFEFE;
 .popup{
 	width: 100%;
 	left: 0%;
-	top: 23%;
+	top: 22%;
 	height: 72%;
 }
-
+.logo{
+	margin-left: 15px;
+}
 }
 
 
