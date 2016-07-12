@@ -338,7 +338,7 @@ h6 span {
     display: block;
     position: relative;
     height: 660px;
-    background: url('../img/how_cut.jpeg') no-repeat fixed center center;
+    background: url('../img/how_cut.jpg') no-repeat fixed center center;
     background-size: cover;
 }
 
@@ -348,7 +348,7 @@ h6 span {
 	display: block;
     position: relative;
     height: 660px;
-    background: url('../img/about_cut.png') no-repeat fixed center center;
+    background: url('../img/about_cut.jpg') no-repeat fixed center center;
     background-size: cover;
 }
 
