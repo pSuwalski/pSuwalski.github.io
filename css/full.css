@@ -41,7 +41,7 @@ nav {
 .motto {
     display: block;
     position: relative;
-    height: 740px;
+    height: 620px;
     background: url('../img/main_hi.jpg') no-repeat fixed center center;
     background-size: cover;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(71,70,71,0.3);
@@ -116,19 +116,24 @@ font-weight: lighter;
 .motto-header {
 	
 	margin-left: 5%;
-	font-size: 40px;
+	font-size: 48px;
 }
 
 .p-header {
 	text-align: left;
-	font-size: 28px;
+	font-size: 32px;
 	margin-left: 9%;
 
+}
+.right {
+	text-align: right;
 }
 
 .bout {
 	margin-left: 14%;
+	padding-bottom: 34px
 }
+
 
 .content {
 	background-color: transparent; 
@@ -152,9 +157,10 @@ h1 span{
 	line-height: 0px;
 	padding: 6px;
 	padding-left: 20px;
-	-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
+/*	-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75); 
+*/
 
 }
 
@@ -164,9 +170,10 @@ p span{
 	line-height: 0px;
 	padding: 6px;
 	padding-left: 15px;
-	-webkit-box-shadow: 0px 3px 3px 0px rgba(71,70,71,0.55);
+/*	-webkit-box-shadow: 0px 3px 3px 0px rgba(71,70,71,0.55);
 	-moz-box-shadow: 0px 3px 3px 0px rgba(71,70,71,0.55);
 	box-shadow: 0px 3px 3px 0px rgba(71,70,71,0.55);
+*/
 }
 
 h2 {
@@ -307,7 +314,7 @@ h6 span {
 .offer {
     display: block;
     position: relative;
-    height: 660px;
+    height: 620px;
     background: url('../img/offer_cut.jpg') no-repeat fixed center center;
     background-size: cover;
     }
@@ -337,7 +344,7 @@ h6 span {
 .how {
     display: block;
     position: relative;
-    height: 660px;
+    height: 680px;
     background: url('../img/how_cut.jpg') no-repeat fixed center center;
     background-size: cover;
 }
@@ -347,14 +354,11 @@ h6 span {
 .about {
 	display: block;
     position: relative;
-    height: 660px;
+    height: 620px;
     background: url('../img/about_cut.jpg') no-repeat fixed center center;
     background-size: cover;
 }
 
-.bout {
-	padding-bottom: 40px; 
-}
 
 .popup {
 	position: fixed;
@@ -604,19 +608,19 @@ margin-top: 0px;
 
 @media (min-width: 1500px) {
 	.motto{
-		height: 900px;
+		height: 800px;
 	}
 	.low{
-		height: 830px;
+		height: 760px;
 	}
 	.how{
-		height: 900px;
+		height: 800px;
 	}
 	.offer{
-		height: 900px;
+		height: 800px;
 	}
 	.about{
-		height: 900px;
+		height: 800px;
 	}
 	.bout{
 		margin-left: 7%;
