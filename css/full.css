@@ -582,19 +582,20 @@ margin-top: 0px;
 	
 }
 	.motto{
-		height: 900px;
+		background: url('../img/motto_small.jpg') no-repeat fixed center center;
 	}
 	.low{
-		height: 830px;
+		background: url('../img/low_small.jpg') no-repeat fixed center center;
 	}
 	.how{
-		height: 900px;
+		background: url('../img/how_small.png') no-repeat fixed center center;
 	}
 	.offer{
-		height: 900px;
+		background: url('../img/offer_small.jpg') no-repeat fixed center center;
 	}
 	.about{
 		background: url('../img/about_small.png') no-repeat fixed center center;
+
 	}
 
 
