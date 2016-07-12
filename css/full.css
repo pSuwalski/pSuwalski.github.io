@@ -528,9 +528,7 @@ color: #FEFEFE;
 	z-index:1;
 }
 .popup{
-	height: 450px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 }
 
 }
