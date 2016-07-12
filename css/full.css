@@ -552,6 +552,10 @@ nav ul{
 	border-right: 1px ridge;
 	border-bottom: 1px ridge;
 	border-color: #4fabd8;
+	-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
+
 }
 nav li{
 	border-top: 1px ridge;
@@ -575,6 +579,7 @@ margin-top: 0px;
 }
 .last{
 	padding-bottom: 18px;
+	
 }
 
 }
