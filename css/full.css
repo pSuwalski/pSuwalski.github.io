@@ -371,7 +371,6 @@ h6 span {
 	-webkit-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.82);
 	-moz-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.82);
 	box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.82);
-	min-width: 262px;
 
 }
 .popup h2{
@@ -529,6 +528,8 @@ color: #FEFEFE;
 }
 .popup{
 	width: 100%;
+	left:0%;
+	right: 0%;
 }
 
 }
