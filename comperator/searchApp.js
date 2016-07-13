@@ -12,7 +12,7 @@
 
   function getCurrency(){
             
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.nbp.pl/home.aspx?f=/kursy/kursya.html';
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.nbp.pl/home.aspx?f=/kursy/kursya.html';
             $.get(cors_api_url, function(data){
             
                 var result = data.replaceAll('src', '');
@@ -51,8 +51,8 @@
 
 function kieskeuringNL(searchQP, lowest){
       console.log(0);
-      var cors_api_url = 'http://www.kieskeurig.nl/search?rq=&min='+lowest/euro+'&max=&min_default=&max_default=&sort=rel&pcode=ontharen_ipl&q=' + searchQP;
-      $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent(cors_api_url) + '&callback=?', function(data){
+      var cors_api_url = 'https://www.kieskeurig.nl/search?rq=&min='+lowest/euro+'&max=&min_default=&max_default=&sort=rel&pcode=ontharen_ipl&q=' + searchQP;
+      $.getJSON('https://whateverorigin.org/get?url=' + encodeURIComponent(cors_api_url) + '&callback=?', function(data){
       console.log(data.contents);
 
 
@@ -64,8 +64,8 @@ function kieskeuringNL(searchQP, lowest){
 function compariRO(searchQP, lowest){
         
             
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.compari.ro/CategorySearch.php?st=' + searchQP + "&minprice=" + lowest/leja;
-            var urlField = 'http://www.compari.ro/CategorySearch.php?st=' + searchQP + "&minprice=" + lowest/leja;
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.compari.ro/CategorySearch.php?st=' + searchQP + "&minprice=" + lowest/leja;
+            var urlField = 'https://www.compari.ro/CategorySearch.php?st=' + searchQP + "&minprice=" + lowest/leja;
             var img = "img/compariRO.png";
             $.get(cors_api_url, function(data){
                       var outcomeArray = [];
@@ -156,8 +156,8 @@ function compariRO(searchQP, lowest){
       
 function agrepHU(searchQP, lowest){
            
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.argep.hu/main.aspx?suche=' + searchQP + '&min=' + lowest/forint*100 + '&max=9000000';
-            var urlField = "http://www.argep.hu/main.aspx?suche=" + searchQP;
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.argep.hu/main.aspx?suche=' + searchQP + '&min=' + lowest/forint*100 + '&max=9000000';
+            var urlField = "https://www.argep.hu/main.aspx?suche=" + searchQP;
             var img = "img/argepHU.png";
               
               $.get(cors_api_url, function(data){
@@ -232,8 +232,8 @@ function agrepHU(searchQP, lowest){
 function salidziniLV(searchQP, lowest) {
 
             var img = "img/salidziniLV.png";
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.salidzini.lv/search.php?q=' + searchQP + "&cn=" + lowest/euro;
-            var urlField = 'http://www.salidzini.lv/search.php?q=' + searchQP + "&cn=" + lowest/euro;
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.salidzini.lv/search.php?q=' + searchQP + "&cn=" + lowest/euro;
+            var urlField = 'https://www.salidzini.lv/search.php?q=' + searchQP + "&cn=" + lowest/euro;
             $.get(cors_api_url, function(data){
 
                     var outcomeArray = [];   
@@ -294,8 +294,8 @@ function salidziniLV(searchQP, lowest) {
 function kainosLT(searchQP, lowest){
 
             var img = "img/kainosLT.png";
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.kainos.lt/lt/search?search_query=' + searchQP + '&submit_search=Ie%C5%A1koti'
-            var urlField = "http://www.kainos.lt/lt/search?search_query=" + searchQP + "&submit_search=Ie%C5%A1koti";
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.kainos.lt/lt/search?search_query=' + searchQP + '&submit_search=Ie%C5%A1koti'
+            var urlField = "https://www.kainos.lt/lt/search?search_query=" + searchQP + "&submit_search=Ie%C5%A1koti";
             $.get(cors_api_url, function(data){
 
                   var outcomeArray = [];   
@@ -364,8 +364,8 @@ function kainosLT(searchQP, lowest){
 function jeftinijeHR(searchQP, lowest) {
 
             var img = "img/jeftinijeHR.png";
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.jeftinije.hr/Trazenje/Proizvodi?q=' + searchQP + "&craz=BZ" + "2000" +"Z99999";
-            var urlField = 'http://www.jeftinije.hr/Trazenje/Proizvodi?q=' + searchQP;
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.jeftinije.hr/Trazenje/Proizvodi?q=' + searchQP + "&craz=BZ" + "2000" +"Z99999";
+            var urlField = 'https://www.jeftinije.hr/Trazenje/Proizvodi?q=' + searchQP;
             $.get(cors_api_url, function(data){
 
                   var outcomeArray = [];   
@@ -417,8 +417,8 @@ function jeftinijeHR(searchQP, lowest) {
 function geizhals(searchQP, lowest) {
 
             var img = "img/geizhals.png";
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://geizhals.at/?fs=' + searchQP + '&in='
-            var urlField = 'http://geizhals.at/?fs=' + searchQP + '&in=';
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://geizhals.at/?fs=' + searchQP + '&in='
+            var urlField = 'https://geizhals.at/?fs=' + searchQP + '&in=';
 
             $.get(cors_api_url, function(data){
               var outcomeArray = [];   
@@ -439,7 +439,7 @@ function geizhals(searchQP, lowest) {
                           specialLink = specialLink.slice(specialLink.indexOf('geizhals'), specialLink.length) + "?t=alle&plz=&va=b&vl=uk&hloc=at&hloc=de&hloc=uk&v=e#filterform";
                           specialLink = specialLink.replace(/(file:\/\/)/g, '')  
                           var urlFieldTwo = specialLink;        
-                          var cors_api_url_2 = 'http://hidden-chamber-98689.herokuapp.com/' + specialLink;
+                          var cors_api_url_2 = 'https://hidden-chamber-98689.herokuapp.com/' + specialLink;
                   
                           $.get(cors_api_url_2, function(data){
                             var outcomeArray = [];   
@@ -457,7 +457,7 @@ function geizhals(searchQP, lowest) {
                                     price = price.toFixed(2);
                                     if(lowest - price > 0){
                                     }else{
-                                    var outcomeGEI = new outcome('http://geizhals.at/?fs=' + searchQP + '&in=', img, name, price, "geizhals");
+                                    var outcomeGEI = new outcome('https://geizhals.at/?fs=' + searchQP + '&in=', img, name, price, "geizhals");
                                     outcomeArray.push(outcomeGEI);
                                     }
                                   });
@@ -488,8 +488,8 @@ function geizhals(searchQP, lowest) {
 
 function ceneo(searchQP, lowest) {
 
-          var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.ceneo.pl/;szukaj-' + searchQP + ";m" + lowest + ";0112-0.htm";
-          var urlField = 'http://www.ceneo.pl/;szukaj-' + searchQP;
+          var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.ceneo.pl/;szukaj-' + searchQP + ";m" + lowest + ";0112-0.htm";
+          var urlField = 'https://www.ceneo.pl/;szukaj-' + searchQP;
           var img = "img/ceneoPL.png";
 
           $.get(cors_api_url, function(data){
@@ -506,8 +506,8 @@ function ceneo(searchQP, lowest) {
                 }
               }
               if (specialLink.length > 0){
-                  var specialLink = specialLink.replace(/(file:\/\/\/)+/g, 'http://www.ceneo.pl/');
-                  var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/' + specialLink;
+                  var specialLink = specialLink.replace(/(file:\/\/\/)+/g, 'https://www.ceneo.pl/');
+                  var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/' + specialLink;
                   var urlFieldTwo = specialLink;
                   $.get(cors_api_url, function(data){
 
@@ -566,8 +566,8 @@ function ceneo(searchQP, lowest) {
 function trovaprezziIT(searchQP, lowest) {
 
             var img = "img/trovaprezziIT.png"
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.trovaprezzi.it/categoria.aspx?id=-1&libera=' + searchQP + '&prezzomin=&prezzomax=';
-            var urlField = 'http://www.trovaprezzi.it/categoria.aspx?id=-1&libera=' + searchQP + '&prezzomin=&prezzomax=';
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.trovaprezzi.it/categoria.aspx?id=-1&libera=' + searchQP + '&prezzomin=&prezzomax=';
+            var urlField = 'https://www.trovaprezzi.it/categoria.aspx?id=-1&libera=' + searchQP + '&prezzomin=&prezzomax=';
             $.get(cors_api_url, function(data){
 
 
@@ -577,8 +577,8 @@ function trovaprezziIT(searchQP, lowest) {
               if (result.find('div.catsMITitle').length > 0){
                   var specialLink = result.find('div.catsMI');
                   specialLink = specialLink[0].childNodes[1].childNodes[1].href;
-                  var cors_api_url_2 = "http://www.trovaprezzi.it/" + specialLink.slice(8)
-                  $.getJSON('http://whateverorigin.org/get?url=' + cors_api_url_2 + '&callback=?')
+                  var cors_api_url_2 = "https://www.trovaprezzi.it/" + specialLink.slice(8)
+                  $.getJSON('https://whateverorigin.org/get?url=' + cors_api_url_2 + '&callback=?')
                     .then(function(data){
                       var result = $(data.contents.replaceAll('src', ''));
                       result = result.find('div.listing_item_info');
@@ -685,7 +685,7 @@ function pricerunnerDK(searchQP, lowest){
             var img = "img/pricerunnerSE.png"
             var searchQPE = searchQP.replace(/\+/g, "2B");
             var searchQ = searchQP.replace(/\+/g, " ");
-            var cors_api_url_bot = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?uri=http%3A%2F%2Fwww.pricerunner.dk%2Fsearch%3F%26q%3D' + searchQP;
+            var cors_api_url_bot = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?uri=http%3A%2F%2Fwww.pricerunner.dk%2Fsearch%3F%26q%3D' + searchQP;
             var urlField = 'www.pricerunner.dk/search?&q=' + searchQP;
 
             $.get(cors_api_url_bot, function(bot){
@@ -695,7 +695,7 @@ function pricerunnerDK(searchQP, lowest){
                   resultLink = resultLink[29];
                   resultLink = resultLink.childNodes[5].childNodes[11].childNodes[1].href;
                   resultLink = resultLink.slice(resultLink.indexOf('id'), resultLink.length); 
-                  var cors_api_url_har = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?' + resultLink;
+                  var cors_api_url_har = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?' + resultLink;
                   var x = new XMLHttpRequest();
                   x.open('GET', cors_api_url_har, true);
                   x.send(null);
@@ -707,14 +707,14 @@ function pricerunnerDK(searchQP, lowest){
                       link = link[0].replace(/[\s : \" , ]/g, '');
                       link = link.replace(/(redirectURL)/g, '');
                       var nextLink = link.substring(2, link.length);
-                      nextLink = "http://www.pricerunner.dk/c" + nextLink;
+                      nextLink = "https://www.pricerunner.dk/c" + nextLink;
                       nextLink = nextLink.replace(/\//g, '%2F');
                       nextLink = nextLink.replace(/:/g, '%3A');
                       nextLink = nextLink.replace(/\?/g, '%3F');
                       nextLink = nextLink.replace(/&/g, '%26');
                       nextLink = nextLink.replace(/=/g, '%3D');
                       nextLink = nextLink.replace(/\+/g, '%2B');
-                      nextLink = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?uri=' + nextLink;
+                      nextLink = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?uri=' + nextLink;
 
                       $.get(nextLink, function(bot){
 
@@ -723,7 +723,7 @@ function pricerunnerDK(searchQP, lowest){
                       resultLink = resultLink[29];
                       resultLink = resultLink.childNodes[5].childNodes[11].childNodes[1].href;
                       resultLink = resultLink.slice(resultLink.indexOf('id'), resultLink.length); 
-                      var cors_api_url_har = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?' + resultLink;
+                      var cors_api_url_har = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?' + resultLink;
                       var y = new XMLHttpRequest();
                       y.open('GET', cors_api_url_har, true);
                       y.send(null);
@@ -747,10 +747,10 @@ function pricerunnerDK(searchQP, lowest){
                             var wholeLink = [linked.slice(0, 4), ":", linked.slice(4)].join('') + "&price_min=" + lowest/koronaDK + "&price_max=17710";
                             }else{
                             var wholeLink = linked.substring(2, linked.length);
-                            wholeLink = "http://www.pricerunner.dk/c" + wholeLink + "&price_min=" + lowest/koronaDK + "&price_max=17710" + "&sort=3";
+                            wholeLink = "https://www.pricerunner.dk/c" + wholeLink + "&price_min=" + lowest/koronaDK + "&price_max=17710" + "&sort=3";
                             };
 
-                              $.getJSON('http://whateverorigin.org/get?url=' + wholeLink + '&callback=?')
+                              $.getJSON('https://whateverorigin.org/get?url=' + wholeLink + '&callback=?')
                               .then(function(data){
 
                                     var outcomeArray = [];
@@ -822,7 +822,7 @@ function pricerunnerSE(searchQP, lowest){
             var img = "img/pricerunnerSE.png"
             var searchQPE = searchQP.replace(/\+/g, "2B");
             var searchQ = searchQP.replace(/\+/g, " ");
-            var cors_api_url_bot = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?uri=http%3A%2F%2Fwww.pricerunner.se%2Fsearch%3F%26q%3D' + searchQP;
+            var cors_api_url_bot = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?uri=http%3A%2F%2Fwww.pricerunner.se%2Fsearch%3F%26q%3D' + searchQP;
             var urlField = 'www.pricerunner.se/search?&q=' + searchQP;
 
             $.get(cors_api_url_bot, function(bot){
@@ -832,7 +832,7 @@ function pricerunnerSE(searchQP, lowest){
                   resultLink = resultLink[29];
                   resultLink = resultLink.childNodes[5].childNodes[11].childNodes[1].href;
                   resultLink = resultLink.slice(resultLink.indexOf('id'), resultLink.length);
-                  var cors_api_url_har = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?' + resultLink;
+                  var cors_api_url_har = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?' + resultLink;
                   var x = new XMLHttpRequest();
                   x.open('GET', cors_api_url_har, true);
                   x.send(null);
@@ -844,14 +844,14 @@ function pricerunnerSE(searchQP, lowest){
                       link = link[0].replace(/[\s : \" , ]/g, '');
                       link = link.replace(/(redirectURL)/g, '');
                       var nextLink = link.substring(2, link.length);
-                      nextLink = "http://www.pricerunner.se/c" + nextLink;
+                      nextLink = "https://www.pricerunner.se/c" + nextLink;
                       nextLink = nextLink.replace(/\//g, '%2F');
                       nextLink = nextLink.replace(/:/g, '%3A');
                       nextLink = nextLink.replace(/\?/g, '%3F');
                       nextLink = nextLink.replace(/&/g, '%26');
                       nextLink = nextLink.replace(/=/g, '%3D');
                       nextLink = nextLink.replace(/\+/g, '%2B');
-                      nextLink = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?uri=' + nextLink;
+                      nextLink = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?uri=' + nextLink;
 
                       $.get(nextLink, function(bot){
 
@@ -860,7 +860,7 @@ function pricerunnerSE(searchQP, lowest){
                       resultLink = resultLink[29];
                       resultLink = resultLink.childNodes[5].childNodes[11].childNodes[1].href;
                       resultLink = resultLink.slice(resultLink.indexOf('id'), resultLink.length);
-                      var cors_api_url_har = 'http://hidden-chamber-98689.herokuapp.com/http://redbot.org/?' + resultLink;
+                      var cors_api_url_har = 'https://hidden-chamber-98689.herokuapp.com/https://redbot.org/?' + resultLink;
                       var y = new XMLHttpRequest();
                       y.open('GET', cors_api_url_har, true);
                       y.send(null);
@@ -883,10 +883,10 @@ function pricerunnerSE(searchQP, lowest){
                             var wholeLink = [linked.slice(0, 4), ":", linked.slice(4)].join('') + "&price_min=" + lowest/koronaSE + "&price_max=99999";
                             }else{
                             var wholeLink = linked.substring(2, linked.length);
-                            wholeLink = "http://www.pricerunner.se/c" + wholeLink + "&price_min=" + lowest/koronaSE + "&price_max=99999";
+                            wholeLink = "https://www.pricerunner.se/c" + wholeLink + "&price_min=" + lowest/koronaSE + "&price_max=99999";
                             };
 
-                              $.getJSON('http://whateverorigin.org/get?url=' + wholeLink + '&callback=?')
+                              $.getJSON('https://whateverorigin.org/get?url=' + wholeLink + '&callback=?')
                               .then(function(data){
                                     var outcomeArray = [];
                                     var result = $(data.contents.replaceAll('src', ''));
@@ -958,8 +958,8 @@ function pricerunnerSE(searchQP, lowest){
 function heurekaCZ (searchQP, lowest) { 
             searchQP = searchQP.replace(/[+]/g, '%2B')
             var img = "img/heurekaSK.png"
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.heureka.cz/?h%5Bfraze%5D=' + searchQP + "&min=" + lowest/koronaCZ + "&max=&gty=new&o=1&o=3";
-            var urlField = 'http://www.heureka.cz/?h%5Bfraze%5D=' + searchQP + "&min=" + lowest/koronaCZ + "&max=&gty=new&o=1&o=3";
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.heureka.cz/?h%5Bfraze%5D=' + searchQP + "&min=" + lowest/koronaCZ + "&max=&gty=new&o=1&o=3";
+            var urlField = 'https://www.heureka.cz/?h%5Bfraze%5D=' + searchQP + "&min=" + lowest/koronaCZ + "&max=&gty=new&o=1&o=3";
             var x = new XMLHttpRequest();
             x.open('GET', cors_api_url, true);
             x.send(null);
@@ -1020,8 +1020,8 @@ function heurekaCZ (searchQP, lowest) {
 function heurekaSK (searchQP, lowest) { 
             searchQP = searchQP.replace(/[+]/g, '%2B')
             var img = "img/heurekaSK.png"
-            var cors_api_url = 'http://hidden-chamber-98689.herokuapp.com/http://www.heureka.sk/?h%5Bfraze%5D=' + searchQP + "&min=" + lowest/euro + "&max=&gty=new&o=1&o=3";
-            var urlField = 'http://www.heureka.sk/?h%5Bfraze%5D=' + searchQP + '&m=f&min=&max=&o=3';
+            var cors_api_url = 'https://hidden-chamber-98689.herokuapp.com/https://www.heureka.sk/?h%5Bfraze%5D=' + searchQP + "&min=" + lowest/euro + "&max=&gty=new&o=1&o=3";
+            var urlField = 'https://www.heureka.sk/?h%5Bfraze%5D=' + searchQP + '&m=f&min=&max=&o=3';
             var x = new XMLHttpRequest();
             x.open('GET', cors_api_url, true);
             x.send(null);

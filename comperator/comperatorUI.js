@@ -41,12 +41,12 @@
 
 
     // Frames
-    $('#IDEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.de &nbsp <img onclick="IDEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoDE" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=' + searchQuery +'#tiles"></div></div>');
-    $('#IATFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.at &nbsp <img onclick="IATFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoAT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.at/preisvergleich/MainSearchProductCategory.html?q=' + searchQuery +'#tiles"></div>');
-    $('#IFRFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.fr &nbsp <img onclick="IFRFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoFR" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.fr/prechcat.html?q=' + searchQuery +'#tiles"></div>');
-    $('#IESFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.es &nbsp <img onclick="IESFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoES" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.es/resultados.html?q=' + searchQuery +'#tiles"></div>');
-    $('#IITFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.it &nbsp <img onclick="IITFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoIT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.it/risultati.html?q=' + searchQuery +'#tiles"></div></div><div class="box-header"><i class="ion ion-clipboard"></i><h3 class="box-title">Dodatkowe Ramki</h3></div>');
-    $('#KNLFrame').append('<a class="btn btn-primary" style="width:100%; margin-bottom:10px;" href="http://www.kieskeurig.nl/search?rq=&min='+ (lowest/euro).toFixed(0) +'&max=&min_default=&max_default=&q=' + searchQuery + '" target="_blank" >Pokaż Kieskeurig.nl</a>');
+    $('#IDEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.de &nbsp <img onclick="IDEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoDE" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=' + searchQuery +'#tiles"></div></div>');
+    $('#IATFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.at &nbsp <img onclick="IATFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoAT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.at/preisvergleich/MainSearchProductCategory.html?q=' + searchQuery +'#tiles"></div>');
+    $('#IFRFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.fr &nbsp <img onclick="IFRFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoFR" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.fr/prechcat.html?q=' + searchQuery +'#tiles"></div>');
+    $('#IESFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.es &nbsp <img onclick="IESFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoES" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.es/resultados.html?q=' + searchQuery +'#tiles"></div>');
+    $('#IITFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.it &nbsp <img onclick="IITFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoIT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.it/risultati.html?q=' + searchQuery +'#tiles"></div></div><div class="box-header"><i class="ion ion-clipboard"></i><h3 class="box-title">Dodatkowe Ramki</h3></div>');
+    $('#KNLFrame').append('<a class="btn btn-primary" style="width:100%; margin-bottom:10px;" href="https://www.kieskeurig.nl/search?rq=&min='+ (lowest/euro).toFixed(0) +'&max=&min_default=&max_default=&q=' + searchQuery + '" target="_blank" >Pokaż Kieskeurig.nl</a>');
 
     };
 
@@ -160,37 +160,37 @@
 
     function IDEFrame(){
         $('div#IDEFrame').empty();
-        $('#IDEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.de &nbsp <img onclick="IDEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoDE" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=' + SQ +'#tiles"></div>');
+        $('#IDEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.de &nbsp <img onclick="IDEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoDE" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=' + SQ +'#tiles"></div>');
     };
 
     function IATFrame(){
         $('div#IATFrame').empty();
-        $('#IATFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.at &nbsp <img onclick="IATFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoAT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.at/preisvergleich/MainSearchProductCategory.html?q=' + SQ +'#tiles"></div>');
+        $('#IATFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.at &nbsp <img onclick="IATFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoAT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.at/preisvergleich/MainSearchProductCategory.html?q=' + SQ +'#tiles"></div>');
     };
 
     function IFRFrame(){
         $('div#IFRFrame').empty();
-        $('#IFRFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.fr &nbsp <img onclick="IFRFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoFR" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.fr/prechcat.html?q=' + SQ +'#tiles"></div>');
+        $('#IFRFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.fr &nbsp <img onclick="IFRFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoFR" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.fr/prechcat.html?q=' + SQ +'#tiles"></div>');
     };
 
     function IESFrame(){
         $('div#IESFrame').empty();
-        $('#IESFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.es &nbsp <img onclick="IESFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoES" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.es/resultados.html?q=' + SQ +'#tiles"></div>');
+        $('#IESFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.es &nbsp <img onclick="IESFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoES" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.es/resultados.html?q=' + SQ +'#tiles"></div>');
     };
 
     function IITFrame(){
         $('div#IITFrame').empty();
-        $('#IITFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.it &nbsp <img onclick="IITFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoIT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.it/risultati.html?q=' + SQ +'#tiles"></div>');
+        $('#IITFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.it &nbsp <img onclick="IITFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoIT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.it/risultati.html?q=' + SQ +'#tiles"></div>');
     };
     function KNLFrame(){
         $('div#KNLFrame').empty();
-        $('#KNLFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Kieskeurig.nl &nbsp <img onclick="KNLFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="kieskeurigIT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src=http://www.kieskeurig.nl/search?rq=&min='+lowest/euro+'&max=&min_default=&max_default=&sort=rel&pcode=ontharen_ipl&q=' + SQ + '></div>');
+        $('#KNLFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Kieskeurig.nl &nbsp <img onclick="KNLFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="kieskeurigIT" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src=https://www.kieskeurig.nl/search?rq=&min='+lowest/euro+'&max=&min_default=&max_default=&sort=rel&pcode=ontharen_ipl&q=' + SQ + '></div>');
     };
 
     function AHUFrame(){
         $('div#AHUFrame').empty();
         $('#AHU').hide(1000);
-        $('#AHUFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Argep.hu &nbsp <img onclick="AHUFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="argepHU" style="height: 340px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.argep.hu/main.aspx?suche=' + SQ +'#ajg.1.23B10B1B44CD99BA7501793C78312F6D"></div>');
+        $('#AHUFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Argep.hu &nbsp <img onclick="AHUFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="argepHU" style="height: 340px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.argep.hu/main.aspx?suche=' + SQ +'#ajg.1.23B10B1B44CD99BA7501793C78312F6D"></div>');
     };
 
     function CPLFrame(){
@@ -200,49 +200,49 @@
     function CROFrame(){
         $('div#CROFrame').empty();
         $('#CRO').hide(1000);
-        $('#CROFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Compari.ro &nbsp <img onclick="CROFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="compariRO" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.compari.ro/CategorySearch.php?st=' + SQ + '&minprice=' + low/leja + '"></div>'); 
+        $('#CROFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Compari.ro &nbsp <img onclick="CROFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="compariRO" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.compari.ro/CategorySearch.php?st=' + SQ + '&minprice=' + low/leja + '"></div>'); 
     };
 
     function HCZFrame(){
         $('div#HCZFrame').empty();
         $('#HCZ').hide(1000);
-        $('#HCZFrame').append('<div class="row"style="margin-left:20px;"><h3 class="box-title">Heureka.cz &nbsp <img onclick="HCZFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="heurekaCZ" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.heureka.cz/?h%5Bfraze%5D=' + SQ + '&min=' + low/koronaCZ + '&max=&gty=new&o=1&o=3#text"></div>');
+        $('#HCZFrame').append('<div class="row"style="margin-left:20px;"><h3 class="box-title">Heureka.cz &nbsp <img onclick="HCZFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="heurekaCZ" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.heureka.cz/?h%5Bfraze%5D=' + SQ + '&min=' + low/koronaCZ + '&max=&gty=new&o=1&o=3#text"></div>');
     };
 
     function HSKFrame(){
         $('div#HSKFrame').empty();
         $('#HSK').hide(1000);
-        $('#HSKFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Heureka.sk &nbsp <img onclick="HSKFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="heurekaSK" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.heureka.sk/?h%5Bfraze%5D=' + SQ + '&min=' + low/euro + '&max=&gty=new&o=1&o=3#text"></div>');
+        $('#HSKFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Heureka.sk &nbsp <img onclick="HSKFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="heurekaSK" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.heureka.sk/?h%5Bfraze%5D=' + SQ + '&min=' + low/euro + '&max=&gty=new&o=1&o=3#text"></div>');
     };
 
     function JHRFrame(){
         $('div#JHRFrame').empty();
         $('#JHR').hide(1000);
-        $('#JHRFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Jeftinije.hr &nbsp <img onclick="JHRFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="jeftinijeHR" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.jeftinije.hr/Trazenje/Proizvodi?q=' + SQ + '&craz=BZ' + low/kuna + 'Z99999#mainContent"></div>');
+        $('#JHRFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Jeftinije.hr &nbsp <img onclick="JHRFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="jeftinijeHR" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.jeftinije.hr/Trazenje/Proizvodi?q=' + SQ + '&craz=BZ' + low/kuna + 'Z99999#mainContent"></div>');
     };
 
     function KLTFrame(){
         $('div#KLTFrame').empty();
         $('#KLT').hide(1000);
-        $('#KLTFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Kainos.lt &nbsp <img onclick="KLTFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="kainosLT" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.kainos.lt/lt/search?search_query=' + SQ + '&submit_search=Ie%C5%A1koti#search_results"></div>');
+        $('#KLTFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Kainos.lt &nbsp <img onclick="KLTFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="kainosLT" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.kainos.lt/lt/search?search_query=' + SQ + '&submit_search=Ie%C5%A1koti#search_results"></div>');
     };
 
     function PDKFrame(){
         $('div#PDKFrame').empty();
         $('#PDK').hide(1000);
-        $('#PDKFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Pricerunner.dk &nbsp <img onclick="PDKFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="pricerunnerDK" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.pricerunner.dk/search?&q=' + SQ + '#price_list_content"></div>');
+        $('#PDKFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Pricerunner.dk &nbsp <img onclick="PDKFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="pricerunnerDK" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.pricerunner.dk/search?&q=' + SQ + '#price_list_content"></div>');
     };
 
     function PSEFrame(){
         $('div#PSEFrame').empty();
         $('#PSE').hide(1000);
-        $('#PSEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Pricerunner.se &nbsp <img onclick="PSEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="pricerunnerSE" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.pricerunner.dk/search?&q=' + SQ + '#price_list_content"></div>');
+        $('#PSEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Pricerunner.se &nbsp <img onclick="PSEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="pricerunnerSE" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.pricerunner.dk/search?&q=' + SQ + '#price_list_content"></div>');
     };
 
     function SLVFrame(){
         $('div#SLVFrame').empty();
         $('#SLV').hide(1000);
-        $('#SLVFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Salidzini.lv &nbsp <img onclick="SLVFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="salidziniLV" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="http://www.salidzini.lv/search.php?q=' + SQ + '&cn=' + low/euro + '#ct"></div>');
+        $('#SLVFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Salidzini.lv &nbsp <img onclick="SLVFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="salidziniLV" style="height: 340px; width: 100%; margin-left:20px;" scrolling="yes" src="https://www.salidzini.lv/search.php?q=' + SQ + '&cn=' + low/euro + '#ct"></div>');
     };
 
     function showSearch(){
