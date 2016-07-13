@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="img/cologo.jpg">
+  <meta charset="utf-8">
+  <title>COMPERATOR PL</title>
+  <meta name="viewport" content="width=device-width">
+
+    <!-- APP Components --> 
+
+    <script  type="text/javascript" src="js/jquery-2.2.2.js"></script>
+    <script  type="text/javascript" src="js/searchApp.js"></script>
+    <script  type="text/javascript" src="js/calculator.js"></script>
+    <script  type="text/javascript" src="js/comperatorUI.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+
+    <!-- Styles -->
+
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/calculator.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="plugins/morris/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <a href="index5.html" class="logo">
+          <span class="logo-mini"><b>Com</b>PL</span>
+          <span class="logo-lg"><b>Comperator</b>PL</span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+        </nav>
+      </header>
+      <aside class="main-sidebar">
+        <section class="sidebar">
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Robert Lubina</p>
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="header">Nawigacja</li>
+            <li class="active treeview">
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-table"></i> <span>Wyszukiwanie</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+            </li>
+            <!--li class="header">Historia</li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-laptop"></i> <span>Historia Wyszukiwania</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li>       
+
+                </li>
+                <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i></a></li>
+              </ul>
+            </li-->
+            <li class="header">Kursy walut</li>
+            <li>
+              <table id="curTable" class= "table table-bordereded" style="color:#b8c7ce;" role="grid">
+                    <tbody>
+                        <tr>
+                          <td >EUR</td>
+                          <td id="euro"></td>
+                        </tr>
+                        <tr>
+                          <td>DOL</td>
+                          <td id="dolar" ></td>
+                        </tr>
+                        <tr>
+                          <td>FUNT</td>
+                          <td id="funt" ></td>
+                        </tr>
+                        <tr>
+                          <td>DDK</td>
+                          <td id="korDK" ></td>
+                        </tr>
+                        <tr>
+                          <td>SEK</td>
+                          <td id="korSE" ></td>
+                        </tr>
+                        <tr>
+                          <td>CZK</td>
+                          <td id="korCZ" ></td>
+                        </tr>
+                        <tr>
+                          <td>RON</td>
+                          <td id="leja" ></td>
+                        </tr>
+                        <tr><td></td><td></td></tr>
+                    </tbody>
+              </table>
+            </li>
+          </ul>
+              <div id="note">
+                <ul class="sidebar-menu">
+                  <li class="header">Notatki :</li>
+                  <li>
+                    <textarea name="notatki" id="notes" cols="2" rows="4" class="formcontrol boxsizingBorder" style="color: #1a2226;"></textarea>
+                  </li>
+                </ul>
+                
+              </div>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Comperator
+            <small>search panel</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+        
+         <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 id="searchHead" class="box-title">Wyszukiwanie</h3>
+                <button class="btn btn-primary " id="showSearch" onclick = "showSearch()" style = "display : none;" >Pokaż Wyszukiwanie</button>
+            </div>
+            <div id="searchBox">
+            <form role="form">
+                <div class="box-body">
+                <div class="form-group">
+                    <input type="text" class="form-control searchField" id="searchQuery" placeholder="Nazwa produktu" style="width:100%;">
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control searchField" id="lowest" placeholder="Cena orientacyjna [PLN]">
+                  </div>
+                </div>
+
+              <div class="box-footer">
+                    <button type="submit" class="btn btn-primary disabled" id="searchButton" onclick = "parser()" >Wyszukaj</button>
+              </div>
+            </form>
+            </div>
+        </div>
+
+              <div class="box box-primary" id="outcomeTable" style = "display : none;">
+                <div class="box-header">
+                  <i class="ion ion-clipboard"></i>
+                  <h3 class="box-title">Wyniki Wyszukiwania</h3>
+                  <div class="box-tools pull-right"></div>
+                </div><!-- /.box-header -->
+                 <div>
+                    <button type="submit" class="btn btn-primary" style="width:100%" id="sort" onclick = "sorter()" >Sortuj</button>
+                </div>
+                <div class="box-body">
+                  <div id="outcome">
+                
+                  </div>
+              </div>
+            </div>
+             <div class="box box-primary" id="frames" style="display:none;">
+              <div class="box-body">
+                  <div>
+                    <div id="KNLFrame"></div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; display:none; margin-bottom:10px;" id="scrollON" onclick = "scrollON()" >WŁĄCZ SCROLL</button>
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-bottom:10px;" id="scrollOFF" onclick = "scrollOFF()" >WYŁĄCZ SCROLL</button>
+                  </div>
+                  <div id="frames">
+                    <div id="IDEFrame"></div>
+                    <div id="IATFrame"></div>
+                    <div id="IFRFrame"></div>
+                    <div id="IESFrame"></div>
+                    <div id="IITFrame"></div>    
+                  </div>
+              </div>
+            </div> 
+            <div class="box box-primary" id="framesPlus" style="display:none;">
+              <div class="box-header">
+                <h3 class="box-title">Dodatkowe Ramki</h3>
+              </div>
+
+              <div class="box-body">
+
+                <div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; display:none; margin-bottom:10px;" id="scrollONPlus" onclick = "scrollONPlus()" >WŁĄCZ SCROLL</button>
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-bottom:10px;" id="scrollOFFPlus" onclick = "scrollOFFPlus()" >WYŁĄCZ SCROLL</button>
+                </div>
+                
+                <div>
+
+                  <button type="submit" class="btn btn-primary frameButton" id="AHU" onclick="AHUFrame()">Agrep.HU</button>
+                  <!--button type="submit" class="btn btn-primary frameButton" id="CPL" href="" target="_blank">Ceneo.PL</button-->
+                  <button type="submit" class="btn btn-primary frameButton" id="CRO" onclick="CROFrame()">Compari.RO</button>
+                  <!--button type="submit" class="btn btn-primary frameButton" id="GEI" href="http://ceneo.pl/http://www.ceneo.pl/;szukaj-" target="_blank">Geizhals</button-->
+                  <button type="submit" class="btn btn-primary frameButton" id="HCZ" onclick="HCZFrame()">Heureka.CZ</button>
+                  <button type="submit" class="btn btn-primary frameButton" id="HSK" onclick="HSKFrame()">Heureka.SK</button>
+                  <button type="submit" class="btn btn-primary frameButton" id="JHR" onclick="JHRFrame()">Jeftinije.HR</button>
+                  <button type="submit" class="btn btn-primary frameButton" id="KLT" onclick="KLTFrame()">Kainos.LT</button>
+                  <button type="submit" class="btn btn-primary frameButton" id="PDK" onclick="PDKFrame()">Pricerunner.DK</button>
+                  <button type="submit" class="btn btn-primary frameButton" id="PSE" onclick="PSEFrame()">Pricerunner.SE</button>
+                  <button type="submit" class="btn btn-primary frameButton" id="SLV" onclick="SLVFrame()">Salidzini.LV</button>
+                  
+                </div>
+
+                <div id="framesPlus">
+                    <div id="AHUFrame"></div>
+                    <div id="CROFrame"></div>
+                    <div id="HCZFrame"></div>
+                    <div id="HSKFrame"></div>
+                    <div id="JHRFrame"></div>
+                    <div id="KLTFrame"></div>
+                    <div id="PDKFrame"></div>
+                    <div id="PSEFrame"></div>
+                    <div id="SLVFrame"></div>
+                </div>
+              </div>   
+            </div>
+            <div style="width:100%; height:72px;">
+                  
+            </div> 
+            </section>
+              
+              <div id="calculator">
+                <div class="box-body">
+                  <table class="table" id="curTable" style="border-color:#d2d6de" role="grid">
+                    <tbody>
+                      <tr>
+                        <td style="width:70%"><input type="number" class="form-control" id="inVal" style="width:100%; border-radius:5px; height:25px; color:#000000;"></td>
+                        <td style="width:30%"><select id="from" style="height:85%">
+                              <option value="0" selected="selected">EU</option>
+                              <option value="1">HUF</option>
+                              <option value="2">£</option>
+                              <option value="3">RON</option>
+                              <option value="4">USD</option>
+                              <option value="5">HRK</option>
+                              <option value="6">DDK</option>
+                              <option value="7">SEK</option>
+                              <option value="8">CZK</option>
+                              <option value="9">PLN</option>
+                            </select>
+                      </tr>
+                      <tr> 
+                        <td> <output id="outVal" type="number" class="form-control" id="inVal" style="width:100%; border-radius:5px; height:25px; color:#000000;"> </td>
+                        <td><select id="to" style="height:85%">
+                              <option value="0">EU</option>
+                              <option value="1">HUF</option>
+                              <option value="2">£</option>
+                              <option value="3">RON</option>
+                              <option value="4">USD</option>
+                              <option value="5">HRK</option>
+                              <option value="6">DDK</option>
+                              <option value="7">SEK</option>
+                              <option value="8">CZK</option>
+                              <option value="9" selected="selected">PLN</option>
+                            </select>
+                        </td>    
+                        </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+    </div><!-- ./wrapper -->
+
+<script>
+
+    getCurrency();
+
+    
+
+    $("form").on("submit", function (e) {
+    e.preventDefault();
+    });
+
+    $('.searchField').bind('keydown keyup', function() {
+
+        if(($('#lowest')[0].value).length > 0 && ($('#searchQuery')[0].value).length > 0){
+        $('#searchButton').removeClass("disabled");
+        }else{
+        $('#searchButton').addClass("disabled");
+        }
+
+    });
+
+
+    var notChanged = 1;
+    var curF, curT;
+
+    $('#from').change(function() {
+    notChanged = 0;
+    curF = curs[this.value]
+    console.log(3);
+    var inValue = $('#inVal').val();
+    $('#outVal').html((inValue*curF/curT).toFixed(2));
+
+    });
+
+    $('#to').change(function() {
+      notChanged = 0;
+      curT = curs[this.value];
+      console.log(4);
+      var inValue = $('#inVal').val();
+      $('#outVal').html((inValue*curF/curT).toFixed(2));
+    });
+
+    $('#inVal').bind('keydown keyup keypress', function() {
+      if(notChanged == 1){
+        console.log(1);
+        $('#outVal').html((this.value*euro/1).toFixed(2) );
+      }else{
+        $('#outVal').html((this.value*curF/curT).toFixed(2) );
+      }
+    });
+
+</script>
+
+</body>
+
+</html>
