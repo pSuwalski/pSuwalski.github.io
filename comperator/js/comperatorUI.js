@@ -160,7 +160,7 @@
 
     function IDEFrame(){
         $('div#IDEFrame').empty();
-        $('#IDEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.de &nbsp <img onclick="IDEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoDE" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="http://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=' + SQ +'#tiles"></div>');
+        $('#IDEFrame').append('<div class="row" style="margin-left:20px;"><h3 class="box-title">Idealo.de &nbsp <img onclick="IDEFrame()" src="img/ref.png"></h3></div><div class="row"><iframe id="idealoDE" style="height: 380px; width: 100%; margin-left:20px; margin-right:20px;" scrolling="yes" src="https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=' + SQ +'#tiles"></div>');
     };
 
     function IATFrame(){
